@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_person_24"
+            android:id="@+id/user_profileImage"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profil_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:id="@+id/onlineStats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/baseline_circle_24"
+                    android:visibility="invisible"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profil_Stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textAlignment="textStart"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:id="@+id/requrequ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/sendRequst"
+                android:visibility="invisible"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Accept"
+                    android:layout_below="@id/visit_About"
+                    android:text="Accept"
+                    android:backgroundTint="#7FE457"
+                    android:textColor="#fff"
+                    android:layout_marginRight="3dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Decline"
+                    android:layout_below="@id/visit_About"
+                    android:text="Decline"
+                    android:backgroundTint="#EF061E"
+                    android:textColor="#fff"
+
+                    android:layout_marginLeft="6dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/baseline_person_24"
+        android:id="@+id/visit_prof"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/visit_username"
+        android:layout_below="@id/visit_prof"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="About"
+    android:id="@+id/visit_About"
+    android:layout_below="@id/visit_username"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:textAlignment="center"
+    android:textAllCaps="false"
+    android:textSize="23sp"
+    android:textStyle="italic"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendRequst"
+        android:layout_below="@id/visit_About"
+        android:text="Send Request"
+        android:background="@drawable/buttons"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginLeft="64dp"/>
+
+    <LinearLayout
+        android:id="@+id/requrequ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sendRequst"
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Accept"
+            android:layout_below="@id/visit_About"
+            android:text="Send Request"
+            android:backgroundTint="#7FE457"
+            android:textColor="#fff"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="3dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Decline"
+            android:layout_below="@id/visit_About"
+            android:text="Send Request"
+            android:backgroundTint="#EF061E"
+            android:textColor="#fff"
+            android:layout_marginRight="64dp"
+            android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

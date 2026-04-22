@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "533901001846",
+    "project_id": "letstalk-612cf",
+    "storage_bucket": "letstalk-612cf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533901001846:android:0a21e97d5177e3af270b57",
+        "android_client_info": {
+          "package_name": "com.example.letstalk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxfmXddNvq9mvsvAjKX_TvlmeMABG3Ua0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
